@@ -88,6 +88,7 @@ END;
 
 ```
 ### Output:
+![Screenshot](7b.png)
 ---
 
 ## 3. Write a PL/SQL program to generate Fibonacci series
@@ -129,7 +130,7 @@ END;
 ```
 
 ### Output:
-
+![Screenshot](7c.png)
 
 ---
 
@@ -168,6 +169,7 @@ END;
 ```
 
 ### Output:
+![Screenshot](7d.png)
 
 ---
 
@@ -208,7 +210,7 @@ END;
 ```
 
 ### Output:
-
+![Screenshot](7e.png)
 
 ## RESULT
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
