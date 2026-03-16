@@ -54,7 +54,7 @@ END;
 ```
 ### Output
 
-
+![Screenshot](7a.png)
 ---
 
 ## 2. Write a PL/SQL program to Calculate Sum of First N Natural Numbers
