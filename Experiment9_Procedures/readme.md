@@ -237,31 +237,20 @@ Reversed number of 1234 is 4321
 ### Program:
 
 ```
-CREATE OR REPLACE FUNCTION reverse_number(p_number IN NUMBER)
-RETURN NUMBER IS
-    v_number     NUMBER := p_number;
-    v_reversed   NUMBER := 0;
-    v_digit      NUMBER;
+CREATE OR REPLACE PROCEDURE print_table(p_number IN NUMBER) IS
 BEGIN
-    WHILE v_number > 0 LOOP
-        v_digit := MOD(v_number, 10);
-        v_reversed := (v_reversed * 10) + v_digit;
-        v_number := TRUNC(v_number / 10);
+    DBMS_OUTPUT.PUT_LINE('Multiplication table of ' || p_number || ':');
+    FOR i IN 1..10 LOOP
+        DBMS_OUTPUT.PUT_LINE(p_number || ' x ' || i || ' = ' || (p_number * i));
     END LOOP;
-    RETURN v_reversed;
 END;
 /
 SET SERVEROUTPUT ON;
 
-DECLARE
-    v_input    NUMBER := 1234;
-    v_result   NUMBER;
 BEGIN
-    v_result := reverse_number(v_input);
-    DBMS_OUTPUT.PUT_LINE('Reversed number of ' || v_input || ' is ' || v_result);
+    print_table(5);
 END;
 /
-
 
 
 ```
@@ -273,6 +262,9 @@ Multiplication table of 5:
 5 x 3 = 15  
 ...  
 5 x 10 = 50
+
+<img width="543" height="335" alt="image" src="https://github.com/user-attachments/assets/1ce08227-ef22-488b-aca0-ba82d4807e71" />
+
 
 
 
