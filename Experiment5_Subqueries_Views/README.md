@@ -92,27 +92,11 @@ SELECT * FROM Customers Where salary<2500;
 
 **Output:**
 
-![Output4](output.png)
+<img width="1134" height="419" alt="image" src="https://github.com/user-attachments/assets/13fefcd5-33be-4840-9451-cc0493173ab1" />
 
 **Question 5**
 ---
--- Paste Question 5 here
-
-```sql
-SELECT name FROM customer c1 WHERE  (
-
-SELECT count(*) FROM customer c2 WHERE c2.phone=c1.phone
-
-)=1;
-```
-
-**Output:**
-
-<img width="1092" height="415" alt="image" src="https://github.com/user-attachments/assets/43fc5e21-2bd1-4cb8-ae70-12dfa5ea4dfe" />
-
-**Question 6**
----
-<img width="933" height="583" alt="image" src="https://github.com/user-attachments/assets/c71fa938-352a-49dc-b0a9-86c10d7ba78c" />
+<img width="868" height="584" alt="image" src="https://github.com/user-attachments/assets/331700c3-e162-4cb2-8d71-28ba4e0f1735" />
 
 ```sql
 SELECT * FROM Customers Where salary<2500;
@@ -120,12 +104,12 @@ SELECT * FROM Customers Where salary<2500;
 
 **Output:**
 
-<img width="1017" height="430" alt="image" src="https://github.com/user-attachments/assets/c641d77a-0dc9-4685-8f15-099f38d6b928" />
+<img width="1170" height="448" alt="image" src="https://github.com/user-attachments/assets/1020ea9a-55cf-4273-8b2e-92b1c3ebda4e" />
 
 
-**Question 7**
+**Question 6**
 ---
-<img width="1099" height="499" alt="image" src="https://github.com/user-attachments/assets/54ab20e0-c4a3-41ef-9139-76d91ec40000" />
+<img width="1118" height="499" alt="image" src="https://github.com/user-attachments/assets/c668b544-5b0b-4e06-be0c-6b552b3c5889" />
 
 ```sql
 SELECT name FROM customer c1 WHERE  (
@@ -137,43 +121,74 @@ SELECT count(*) FROM customer c2 WHERE c2.phone=c1.phone
 
 **Output:**
 
-![Output7](output.png)
+<img width="446" height="430" alt="image" src="https://github.com/user-attachments/assets/c35aa0e7-9d1a-49f8-9584-e0fb3d8b6355" />
+
+
+
+**Question 7**
+---
+<img width="1192" height="534" alt="image" src="https://github.com/user-attachments/assets/e8b6af49-0ca6-4912-b92c-109a6d46b17f" />
+
+```sql
+SELECT * FROM Orders WHERE salesman_id IN(
+SELECT salesman_id FROM Salesman WHERE city='London'
+
+);
+```
+
+**Output:**
+
+<img width="1042" height="410" alt="image" src="https://github.com/user-attachments/assets/9ee934e6-1b29-4137-ba5d-5b5aad97a3be" />
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="1042" height="410" alt="image" src="https://github.com/user-attachments/assets/2b727fe0-6f2d-4990-93cb-2f99974ace71" />
+
 
 ```sql
--- Paste your SQL code below for Question 8
+SELECT name,city FROM customer WHERE city IN(
+
+SELECT city FROM customer WHERE id=3 or id=7
+);
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="588" height="425" alt="image" src="https://github.com/user-attachments/assets/14f442d3-02b4-45c0-95d6-054995b8372d" />
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="879" height="540" alt="image" src="https://github.com/user-attachments/assets/61126faf-9d44-4426-8f5a-bf9d954b70ee" />
+
 
 ```sql
--- Paste your SQL code below for Question 9
+SELECT * FROM Customers WHERE salary=1500;
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="1035" height="335" alt="image" src="https://github.com/user-attachments/assets/cc82e30e-171a-4ea2-ad0e-6649312f5dc6" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="1166" height="685" alt="image" src="https://github.com/user-attachments/assets/02a9f49f-f25e-4da9-b076-94651588d51a" />
+
 
 ```sql
--- Paste your SQL code below for Question 10
+SELECT ord_no,purch_amt,ord_date,salesman_id
+FROM orders o WHERE o.salesman_id IN(
+
+SELECT s.salesman_id FROM salesman s WHERE s.commission=(
+SELECT MAX(commission) FROM salesman)
+);
 ```
 
 **Output:**
+<img width="925" height="440" alt="image" src="https://github.com/user-attachments/assets/ca522155-adb4-48a9-aba8-ca0fcf17375e" />
 
-![Output10](output.png)
+
 
 
 ## RESULT
