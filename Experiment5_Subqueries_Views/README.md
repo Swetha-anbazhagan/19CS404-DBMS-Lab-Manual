@@ -38,46 +38,56 @@ DROP VIEW view_name;
 
 **Question 1**
 --
--- Paste Question 1 here
+<img width="811" height="441" alt="image" src="https://github.com/user-attachments/assets/62f5faa9-5967-44da-bf6e-416478966555" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+select * from Medications where dosage=(
+select MAX(dosage) from Medications
+);
+
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="800" height="390" alt="image" src="https://github.com/user-attachments/assets/757b7a46-4ac6-42e5-825a-5404bbc2e11e" />
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="1151" height="506" alt="image" src="https://github.com/user-attachments/assets/96d21779-4f03-4228-bcf6-6cbd39a3a2b7" />
 
 ```sql
--- Paste your SQL code below for Question 2
+SELECT student_name,grade FROM Grades g1 where grade=(
+SELECT MIN(grade) FROM Grades g2 WHERE g2.subject=g1.subject
+);
 ```
 
 **Output:**
+<img width="708" height="421" alt="image" src="https://github.com/user-attachments/assets/dbcb80c1-b35b-4f1a-9e92-58680c5c68f5" />
 
-![Output2](output.png)
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="923" height="649" alt="image" src="https://github.com/user-attachments/assets/a7bb9f94-b605-46ab-b9cb-6c9fd25153ce" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+SELECT * FROM Customers WHERE salary>1500;
 ```
 
 **Output:**
+<img width="1020" height="553" alt="image" src="https://github.com/user-attachments/assets/d5e6b4e2-4d31-4783-8291-03503ee02b0d" />
 
-![Output3](output.png)
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="1109" height="514" alt="image" src="https://github.com/user-attachments/assets/819c885a-7412-451b-8bd5-309f245a4ff8" />
+
 
 ```sql
--- Paste your SQL code below for Question 4
+SELECT * FROM Customers Where salary<2500;
 ```
 
 **Output:**
@@ -89,31 +99,40 @@ DROP VIEW view_name;
 -- Paste Question 5 here
 
 ```sql
--- Paste your SQL code below for Question 5
+SELECT name FROM customer c1 WHERE  (
+
+SELECT count(*) FROM customer c2 WHERE c2.phone=c1.phone
+
+)=1;
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="1092" height="415" alt="image" src="https://github.com/user-attachments/assets/43fc5e21-2bd1-4cb8-ae70-12dfa5ea4dfe" />
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="933" height="583" alt="image" src="https://github.com/user-attachments/assets/c71fa938-352a-49dc-b0a9-86c10d7ba78c" />
 
 ```sql
--- Paste your SQL code below for Question 6
+SELECT * FROM Customers Where salary<2500;
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="1017" height="430" alt="image" src="https://github.com/user-attachments/assets/c641d77a-0dc9-4685-8f15-099f38d6b928" />
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="1099" height="499" alt="image" src="https://github.com/user-attachments/assets/54ab20e0-c4a3-41ef-9139-76d91ec40000" />
 
 ```sql
--- Paste your SQL code below for Question 7
+SELECT name FROM customer c1 WHERE  (
+
+SELECT count(*) FROM customer c2 WHERE c2.phone=c1.phone
+
+)=1;
 ```
 
 **Output:**
