@@ -105,19 +105,27 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+<img width="947" height="398" alt="image" src="https://github.com/user-attachments/assets/f8e16706-8fc6-468e-acd6-a4296535837b" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+CREATE TABLE Orders
+(OrderID INTEGER,
+OrderDate TEXT,
+CustomerID INTEGER
+);
 ```
 
 **Output:**
+<img width="998" height="238" alt="image" src="https://github.com/user-attachments/assets/66105713-169a-475e-be21-982486b2c1ba" />
 
-![Output1](output.png)
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="1148" height="249" alt="image" src="https://github.com/user-attachments/assets/906e162e-a858-482b-8d5c-058ccd3edaae" />
+
+
 
 ```sql
 -- Paste your SQL code below for Question 2
