@@ -142,8 +142,7 @@ SELECT salesman_id FROM Salesman WHERE city='London'
 
 **Question 8**
 ---
-<img width="1042" height="410" alt="image" src="https://github.com/user-attachments/assets/2b727fe0-6f2d-4990-93cb-2f99974ace71" />
-
+<img width="949" height="492" alt="image" src="https://github.com/user-attachments/assets/f30259d0-538c-4f99-9113-22e1bde0f664" />
 
 ```sql
 SELECT name,city FROM customer WHERE city IN(
